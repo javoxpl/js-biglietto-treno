@@ -4,7 +4,7 @@ let sconto40
 
 const messaggioEtaErrata = "L'èta inserita non è valida, inserire un numero";
 const messaggioKmErrati = "La tratta inserita non è valida, inserire un numero";
-const messagioInserisciDato = "Valore non dichiarato";
+const messagioInserisciDato = "inserisci un valore valido";
 
 let eta;
 let km;
