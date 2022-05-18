@@ -7,11 +7,9 @@ va applicato uno sconto del 40% per gli over 65.
 L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indical
 Formula per il calcolo: km * 0.21 = prezzoBiglietto
 Stampare in HTML una lista con eta inseritè, km inseriti ed il prezzo finale
-eta: 50
-km: 120
-prezzzo:24,50
+*/
 
-
+/*
 BONUS:
 validare/ controllare i dati inseriti
 età è un numero?
@@ -34,6 +32,8 @@ let eta;
 let km;
 let prezzo;
 
+
+/*inserisci eta*/
 eta = prompt("Inserisci l'età del viaggiatore");
 
 if ((eta < 0) || (isNaN(eta)) || (eta === " ")){
@@ -41,6 +41,7 @@ if ((eta < 0) || (isNaN(eta)) || (eta === " ")){
     eta = messagioInserisciDato;
 }
 
+/*inserisci km*/
 km = prompt("Inserire i km da percorrere");
 
 if ((km < 0) || (isNaN(km)) || (km === " ")) {
@@ -50,6 +51,7 @@ if ((km < 0) || (isNaN(km)) || (km === " ")) {
 
  prezzo = prezzoKm * km;
 
+/*calcolo sconto*/
 if (eta <= 18) {
     sconto20 = (prezzo * 20) / 100;
     prezzo = prezzo - sconto20
