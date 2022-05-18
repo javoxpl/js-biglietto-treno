@@ -47,7 +47,7 @@ for (km = prompt("Inserire i km da percorrere"); (km < 0) || (isNaN(km)) || (km 
 
  prezzo = prezzoKm * km;
 
-/*calcolo dello sconto*/
+/*calcolo dello sconto percentuale*/
 if (eta <= 18) {
     sconto20 = (prezzo * 20) / 100;
     prezzo = prezzo - sconto20
